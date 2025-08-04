@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo.png" alt="logo" width="150" height="auto" />
+<img src="[logo.png](https://github.com/tipasofteri/MishAI/blob/main/src/assets/logo.png)" alt="logo" width="150" height="auto" />
 
 MishAI
 The smart desktop assistant for Windows that instantly answers your questions from selected text or screen regions.
