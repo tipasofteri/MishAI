@@ -2,27 +2,27 @@
 
 <img src="src/assets/logo.png" alt="MishAI Logo" width="150" />
 
-# MishAI
-
-
-</div>
-
+MishAI
 The smart desktop assistant for Windows that instantly answers your questions from selected text or screen regions.
 
-<div align="center">
-
-![Демонстрация работы MishAI](src/assets/demo.png)
+<p align="center">
+<a href="https://github.com/tipasofteri/MishAI/releases"><img src="https://img.shields.io/github/v/release/tipasofteri/MishAI?style=for-the-badge" /></a>
+<a href="#"><img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python" /></a>
+<a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" /></a>
+</p>
 
 </div>
-</div>
 
+📖 About The Project
+Tired of constantly switching between your work and a browser tab to ask a quick question? MishAI solves this problem.
 
-About The Project
-Stop context-switching. MishAI is a native Windows assistant that brings Google Gemini & OpenAI GPT to your workflow. Get instant answers from selected text or screen regions via hotkeys, without ever leaving your current app. Boost your productivity with AI at your fingertips.
+This lightweight native assistant for Windows lives in your system tray and integrates the power of leading AI models (Google Gemini and OpenAI GPT) directly into your workflow. Whether you're analyzing code, translating a sentence, or trying to understand a complex diagram in a screenshot, MishAI is always just a hotkey away.
+
+Simply select text or a screen region to get an instant, context-aware answer without ever leaving your current application.
 
 <div align="center">
 
-Insert a GIF here demonstrating the application in action. For example:
+Application Demo:
 
 </div>
 
@@ -77,8 +77,7 @@ Git
 Installation
 Clone the repo:
 
-git clone https://github.com/your_username/MishAI.git
-
+git clone https://github.com/tipasofteri/MishAI.git
 cd MishAI
 
 Create and activate a virtual environment:
