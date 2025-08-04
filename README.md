@@ -78,6 +78,7 @@ Installation
 Clone the repo:
 
 git clone https://github.com/your_username/MishAI.git
+
 cd MishAI
 
 Create and activate a virtual environment:
