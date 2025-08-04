@@ -1,6 +1,6 @@
 <div align="center">
 
-![MishAI Logo](src/assets/logo.png)alt="logo" width="150" height="auto" />
+<img src="src/assets/logo.png" alt="MishAI Logo" width="150" />
 
 # MishAI
 
