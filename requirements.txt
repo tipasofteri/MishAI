@@ -1,0 +1,10 @@
+openai
+google-generativeai
+keyboard
+pyperclip
+pystray
+customtkinter
+Pillow
+opencv-python
+ffpyplayer
+numpy
