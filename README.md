@@ -2,113 +2,118 @@
 
 <img src="src/assets/logo.png" alt="MishAI Logo" width="150" />
 
-MishAI
-The smart desktop assistant for Windows that instantly answers your questions from selected text or screen regions.
+# MishAI  
+### 🖥️ The Smart Desktop Assistant for Windows
 
-<p align="center">
-<a href="https://github.com/tipasofteri/MishAI/releases"><img src="https://img.shields.io/github/v/release/tipasofteri/MishAI?style=for-the-badge" /></a>
-<a href="#"><img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python" /></a>
-<a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" /></a>
-</p>
+[![Latest Release](https://img.shields.io/github/v/release/tipasofteri/MishAI?style=for-the-badge)](https://github.com/tipasofteri/MishAI/releases)
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python)
+![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
 
 </div>
 
-📖 About The Project
-Tired of constantly switching between your work and a browser tab to ask a quick question? MishAI solves this problem.
+---
 
-This lightweight native assistant for Windows lives in your system tray and integrates the power of leading AI models (Google Gemini and OpenAI GPT) directly into your workflow. Whether you're analyzing code, translating a sentence, or trying to understand a complex diagram in a screenshot, MishAI is always just a hotkey away.
+## 📖 About the Project
 
-Simply select text or a screen region to get an instant, context-aware answer without ever leaving your current application.
+**MishAI** is a lightweight and fast desktop assistant that’s always within reach.  
+It lets you instantly get answers from **Google Gemini** or **OpenAI ChatGPT** without leaving your workflow.  
+Select text or a screen region, and MishAI will instantly analyze the content and provide a context-aware answer.
 
-<div align="center">
+💡 Perfect for:
+- Code analysis
+- Text translation
+- Understanding complex screenshots or diagrams
+- Quick Q&A without opening a browser
 
-Application Demo:
+---
 
-</div>
+## 🎯 Key Features
 
-🎯 Key Features
-Dual Capture Modes:
+### 📌 Dual Capture Modes
+- **📰 Text Mode** — instantly analyze any selected text.
+- **🖼️ Screenshot Mode** — select any area of your screen and let the AI understand it.
 
-📰 Text: Instantly analyze any selected text.
+### ⚙️ Flexible Configuration
+- 🎛️ Fully customizable hotkeys.
+- 🌐 Multi-language UI & AI responses (**English / Russian**).
+- 🔑 Choose AI provider (**Gemini** or **OpenAI**), model, and manage API keys independently.
 
-🖼️ Screenshot: Select any area on your screen, and the AI will understand what's on it.
+### 🧠 Smart UX
+- 🎬 Welcome video on first launch.
+- 📋 Automatically copies AI responses to clipboard.
+- 🚫 Prevents multiple instances from running.
+- 🌙 Runs quietly in the background via **system tray icon**.
 
-Flexible Configuration:
+---
 
-🔧 Fully customizable hotkeys.
+## 🛠️ Built With
 
-🌐 Multi-language support (Russian/English) for both UI and AI responses.
+- **Python 3**
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — modern GUI
+- [Pystray](https://github.com/moses-palmer/pystray) — tray icon
+- [Keyboard](https://github.com/boppreh/keyboard) — hotkeys
+- [MSS](https://github.com/BoboTiG/python-mss) — screenshots
+- **OpenCV**, **ffpyplayer** — video playback
+- **PyInstaller**, **Inno Setup** — `.exe` installer
 
-⚙️ Choose your AI provider (Gemini/OpenAI), model, and manage API keys independently through a user-friendly menu.
+---
 
-Smart UX:
+## 🚀 Getting Started
 
-🚀 Welcome video on first launch.
+### 📋 Prerequisites
+- Python **3.10+**
+- Git
 
-📋 Automatically copies the AI's response to the clipboard.
-
-🔒 Prevents multiple instances of the application from running.
-
-🌙 Runs in the background via a system tray icon.
-
-🛠️ Built With
-Python 3
-
-CustomTkinter: For creating the modern GUI.
-
-Pystray: For the system tray icon.
-
-Keyboard: For global hotkey management.
-
-MSS: For screen capturing.
-
-OpenCV & ffpyplayer: For splash screen video playback.
-
-PyInstaller & Inno Setup: For building a full-fledged .exe installer.
-
-🚀 Getting Started
-To get a local copy up and running, follow these simple steps.
-
-Prerequisites
-Python (3.10 or higher)
-
-Git
-
-Installation
-Clone the repo:
-
+### 🔧 Installation
+```bash
+# Clone the repository
 git clone https://github.com/tipasofteri/MishAI.git
 cd MishAI
 
-Create and activate a virtual environment:
-
+# Create a virtual environment
 python -m venv .venv
 .venv\Scripts\activate
 
-Install all dependencies:
-
+# Install dependencies
 pip install -r requirements.txt
 
-Run the application:
-
+# Run the application
 python src
-
-On the first launch, the app will ask for your API key and create a configuration file in %AppData%/MishAI.
+```
 
 💻 Usage
-To analyze text: Select text anywhere and press Ctrl+Shift+Q (by default).
+On first launch, you’ll be prompted to enter your API key.
+```bash
+#Settings are saved 
+%AppData%/MishAI
+```
 
-To analyze a screenshot: Press Ctrl+Shift+S (by default), select a region of your screen, and release the mouse button.
+Action	Default Hotkey
+📰 Analyze selected text	Ctrl+Shift+Q
+🖼️ Analyze screenshot	Ctrl+Shift+S
 
-Settings: Right-click the tray icon to open the settings menu, where you can change hotkeys, language, model, and API keys.
+✪ Settings: Right-click the tray icon → open settings menu
 
-📦 Building The Installer
-If you want to build your own setup.exe from the source code:
+✪ You can change the language, AI model, and hotkeys
 
-Install Inno Setup: Download and install Inno Setup.
+<div align="center"> <img src="src/assets/demo.png" alt="MishAI Application Demo" /> </div>
 
-Run the build script:
-
+📦 Building the Installer
+1.Install Inno Setup
+2.Run:
+```bash
 python build.py
+```
+The installer will appear in the installers folder:
+```bash
+MishAI-vX.X.X-setup.exe
+```
 
-The final installer MishAI-vX.X.X-setup.exe will appear in the installers folder.
+📜 License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it.
+
+<div align="center">
+⭐ If you like this project, give it a star on GitHub! ⭐
+
+</div> 
