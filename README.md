@@ -5,9 +5,13 @@
 MishAI
 The smart desktop assistant for Windows that instantly answers your questions from selected text or screen regions.
 
+<div align="center">
+
+![Демонстрация работы MishAI](src/assets/demo.png)
+
+</div>
 </div>
 
-![demo MishAI](assets/demo.png)
 
 About The Project
 Stop context-switching. MishAI is a native Windows assistant that brings Google Gemini & OpenAI GPT to your workflow. Get instant answers from selected text or screen regions via hotkeys, without ever leaving your current app. Boost your productivity with AI at your fingertips.
