@@ -99,8 +99,11 @@ Action	Default Hotkey
 <div align="center"> <img src="src/assets/demo.png" alt="MishAI Application Demo" /> </div>
 
 📦 Building the Installer
+
 1.Install Inno Setup
+
 2.Run:
+
 ```bash
 python build.py
 ```
